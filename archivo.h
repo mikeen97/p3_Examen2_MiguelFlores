@@ -11,5 +11,7 @@ class archivo{
 
 	public:
 		archivo();
+
+		
 };
 #endif

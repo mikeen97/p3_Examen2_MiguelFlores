@@ -5,15 +5,17 @@
 
 class ArrayStack : public Stack{
 private:
-	string* array;
-	int size;
-	int availPos;
+	string* array;//vector
+	int size;//tama;no de la pila 
+	int availPos;//puntero de mi pila
 public:
-	ArrayStack(int);
-	virtual bool push(string);
-	virtual string pop();
-	virtual bool isEmpty();
-	virtual bool isFull();
+	ArrayStack(int);//crear
+	virtual bool push(string);//meter dato
+	virtual bool revertir();//meter dato	
+	virtual string pop();//eliminar  	
+	virtual bool isEmpty();//ver si esta vacia 
+	virtual bool isFull();//ver si esta llena 
+
 
 	~ArrayStack();
 };
