@@ -13,6 +13,7 @@ public:
 	virtual bool push(string);
 	virtual string pop();
 	virtual bool isEmpty();
+	virtual bool isFull();
 
 	~ArrayStack();
 };

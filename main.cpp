@@ -37,8 +37,8 @@ int main(){
 				while(!Archivo.eof()){
 					getline(Archivo,texto);
 				}
-			}				
-			
+			}
+			ArrayStack text = new ArrayStack(5);
 		}		
 		if (menu==3){
 			

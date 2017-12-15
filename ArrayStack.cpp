@@ -6,7 +6,6 @@ ArrayStack::ArrayStack(int pSize){ //Crear una pila y le das el size
 	availPos=0;
 }
 
-
 bool ArrayStack::push(string dato){//Para meter el dato a la pila 
 	bool retval=false;
 
@@ -23,10 +22,17 @@ bool ArrayStack::isEmpty(){//si la pila esta vacia
 	return availPos==0;
 }
 
+bool ArrayStack::isFull(){//si la pila esta vacia 
+	if (availPos==5){
+		return true;
+	}
+} 
+
 string ArrayStack::pop(){//Borrar de la pila 
 	if (isEmpty()) {
 		return 0;
-	}else{
+	}
+	else{
 		string retval=array[availPos-1];
 		availPos--;
 		return retval;
